@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+let idadeStefany = 21;
+let idadesAmigos = [idadeStefany, 20, 23, 18, 7];
+
+function calculaProximaIdade() {
+    console.log(idadesAmigos[0] + 1); 
+}
+
+function calculaProximasIdades() {
+        for(var i = 0; i < idadesAmigos.length; i++){
+            var idadeUmAnoMaisVelho = idadesAmigos[i] + 1;
+            console.log(idadeUmAnoMaisVelho);
+        }
+}
+
+function calculaIdadesDaqui5Anos() {
+     for(var i = 0; i < idadesAmigos.length; i++){
+            var idadeCincoAnosMaisVelho = idadesAmigos[i] + 5;
+            console.log(idadeCincoAnosMaisVelho);
+        }
+    }
+
+calculaProximaIdade();
+
+calculaProximasIdades();
+
+calculaIdadesDaqui5Anos();
+</script>
